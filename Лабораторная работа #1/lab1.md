@@ -19,8 +19,9 @@ mkdir -p /Users/user/sites/project2
 mkdir -p /Users/user/shared_assets
 
 Создадим простые пет-проекты
-<pre><code>
+
 cat > /Users/user/sites/project1/index.html <<'EOF'
+<pre><code>
 <!doctype html>
 <html>
 <head><meta charset="utf-8"><title>Project1</title></head>
@@ -32,8 +33,8 @@ cat > /Users/user/sites/project1/index.html <<'EOF'
 </html>
 </code></pre>
 EOF#
-<pre><code>
 cat > /Users/user/sites/project2/index.html <<'EOF'
+<pre><code>
 <!doctype html>
 <html>
 <head><meta charset="utf-8"><title>Project2</title></head>
@@ -43,8 +44,8 @@ cat > /Users/user/sites/project2/index.html <<'EOF'
   <img src="/static/logo2.txt" alt="logo2">
 </body>
 </html>
-EOF
 </code></pre>
+EOF
 Примитивные "статические" файлы, чтобы проверить alias
 echo "LOGO1" > /Users/user/shared_assets/logo1.txt
 echo "LOGO2" > /Users/user/shared_assets/logo2.txt
