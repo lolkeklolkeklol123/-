@@ -246,6 +246,8 @@ https://project2.test
 
 Как мы видим на скриншоте Тест.png все действительно запускается.
 
+![](./тест.jpg)
+
 
 При перепроверке с запуском http://project1.test и http://project2.test всё штатно перебрасывается на https://project1.test и https://project2.test на скринах http.png и https.png
 
@@ -255,6 +257,7 @@ alias также работают штатно!
 
 Спасибо за внимание!
 ```
+
 
 
 
