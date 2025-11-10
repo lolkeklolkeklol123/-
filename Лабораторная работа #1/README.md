@@ -49,7 +49,7 @@ cat > /Users/user/sites/project2/index.html <<'EOF'
 ![](./image2.png)
 
 EOF
-
+```
 Примитивные "статические" файлы, чтобы проверить alias
 
 echo "LOGO1" > /Users/user/shared_assets/logo1.txt
@@ -254,7 +254,7 @@ alias также работают штатно!
 
 
 Спасибо за внимание!
-
+```
 
 
 
