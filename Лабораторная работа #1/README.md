@@ -198,10 +198,12 @@ PROJECT1
 
 project2:
 cat > "$NGX_ETC/servers/project2.conf" <<'PROJECT2'
+
 server {
     listen 80;
     server_name project2.test;
     return 301 https:/ /$host$request_uri;
 }
+
 
 
