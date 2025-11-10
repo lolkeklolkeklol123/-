@@ -191,6 +191,72 @@ server {
     
 }
 
+server {
+
+    listen 443 ssl http2;
+    
+    server_name project2.test;;
+    
+    root /Users/user/sites/project2;
+    
+    index index.html index.htm;
+    
+    Пример alias с поддиректорией
+    
+    location /static/ {
+    
+        alias /Users/user/shared_assets/;
+        
+        try_files $uri $uri/ =404;
+        
+    }
+    
+    location / {
+    
+        try_files $uri $uri/ =404;
+        
+    }
+    
+    access_log  /usr/local/var/log/nginx/project2.access.log;
+    
+    error_log   /usr/local/var/log/nginx/project2.error.log;
+    
+}
+
+PROJECT2
+
+
+Проверим конфигурацию и запустим nginx
+
+sudo nginx -t -c "$(brew --prefix)/etc/nginx/nginx.conf"
+
+
+Тестирование:
+
+curl -v https://project1.test/
+
+curl -v https://project2.test/
+
+Открываем в браузере:
+
+https://project1.test
+
+https://project2.test
+
+
+Как мы видим на скриншоте Тест.png все действительно запускается.
+
+
+При перепроверке с запуском http://project1.test и http://project2.test всё штатно перебрасывается на https://project1.test и https://project2.test на скринах http.png и https.png
+
+
+alias также работают штатно!
+
+
+Спасибо за внимание!
+
+
+
 
 
 
