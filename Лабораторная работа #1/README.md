@@ -39,14 +39,13 @@ mkdir -p /Users/user/shared_assets
 
 cat > /Users/user/sites/project1/index.html <<'EOF'
 
-```html 
 ![](./image1.png)
 
 EOF#
 
 cat > /Users/user/sites/project2/index.html <<'EOF'
 
-```html
+
 ![](./image2.png)
 
 EOF
@@ -166,6 +165,7 @@ server {
     server_name project2.test;
     return 301 https:/ /$host$request_uri;
 }
+
 
 
 
