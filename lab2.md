@@ -87,9 +87,9 @@ http {
 }
 NGINXCONF
 Создадим два файла: project1.conf и project2.conf. Они будут:
-слушать 80 и делать 301 на https
-слушать 443 с SSL и обслуживать нужный каталог
-продемонстрируем alias на /static/ (shared_assets)
+слушать 80 и делать 301 на https/
+слушать 443 с SSL и обслуживать нужный каталог/
+продемонстрируем alias на /static/ (shared_assets)/
 project1:
 cat > "$NGX_ETC/servers/project1.conf" <<'PROJECT1'
 server {
