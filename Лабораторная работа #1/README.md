@@ -138,33 +138,60 @@ server {
 }
 
 server {
+
     listen 443 ssl http2;
+    
     server_name project1.test;
+    
     ssl_certificate     
+    
     root /Users/user/sites/project1;
+    
     index index.html index.htm;
+    
     Пример alias: /static/ будет мапиться в /Users/user/shared_assets/
+    
     location /static/ {
+    
         alias /Users/user/shared_assets/;
+        
         Пробуем отдать файл, иначе 404
+        
         try_files $uri $uri/ =404;
+        
     }
+    
     location / {
+    
         try_files $uri $uri/ =404;
+        
     }
+    
     access_log  /usr/local/var/log/nginx/project1.access.log;
+    
     error_log   /usr/local/var/log/nginx/project1.error.log;
+    
 }
+
 PROJECT1
 
+
 project2:
+
 cat > "$NGX_ETC/servers/project2.conf" <<'PROJECT2'
 
+
 server {
+
     listen 80;
+    
     server_name project2.test;
+    
     return 301 https:/ /$host$request_uri;
+    
 }
+
+
 
 
 
