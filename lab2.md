@@ -21,7 +21,7 @@ mkdir -p /Users/user/shared_assets
 Создадим простые пет-проекты
 
 cat > /Users/user/sites/project1/index.html <<'EOF'
-<!doctype html>
+#<!doctype html>
 <html>
 <head><meta charset="utf-8"><title>Project1</title></head>
 <body>
@@ -30,10 +30,10 @@ cat > /Users/user/sites/project1/index.html <<'EOF'
   <img src="/static/logo1.txt" alt="logo1">
 </body>
 </html>
-EOF
+EOF#
 
 cat > /Users/user/sites/project2/index.html <<'EOF'
-<!doctype html>
+#<!doctype html>
 <html>
 <head><meta charset="utf-8"><title>Project2</title></head>
 <body>
