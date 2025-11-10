@@ -42,21 +42,13 @@ cat > /Users/user/sites/project1/index.html <<'EOF'
 <pre><code>
 ```html 
 <!doctype html>
-  
 <html>
-  
 <head><meta charset="utf-8"><title>Project1</title></head>
-  
 <body>
-  
   <h1>Project 1 — user</h1>
-  
   <p>Served by nginx (project1)</p>
-  
   <img src="/static/logo1.txt" alt="logo1">
-  
 </body>
-  
 </html>```
 
 EOF#
@@ -65,21 +57,13 @@ cat > /Users/user/sites/project2/index.html <<'EOF'
 
 ```html
 <!doctype html>
-  
 <html>
-  
 <head><meta charset="utf-8"><title>Project2</title></head>
-  
 <body>
-  
   <h1>Project 2 — user</h1>
-  
   <p>Served by nginx (project2)</p>
-  
   <img src="/static/logo2.txt" alt="logo2">
-  
 </body>
-  
 </html>```
 
 EOF
@@ -199,6 +183,7 @@ server {
     server_name project2.test;
     return 301 https:/ /$host$request_uri;
 }
+
 
 
 
