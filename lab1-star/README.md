@@ -34,7 +34,7 @@
 - Обнаружены потенциально релевантные CVE для версии nginx
 
 ---
-
+lab1-star/4.png
 ## 4. Активное тестирование уязвимостей
 
 ### 4.1 Попытка Path Traversal 
@@ -46,7 +46,7 @@ curl -i "https://swrstats.ru/..%2f..%2fetc%2fpasswd"
 Результат: `HTTP/1.1 400 Bad Request`
 
 ---
-
+lab1-star/1.png
 ### 4.2 Попытка Path Traversal (URL-кодировка)
 
 ```bash
@@ -96,7 +96,8 @@ curl -i -X OPTIONS https://swrstats.ru
 Результат: `HTTP/1.1 200 OK`
 
 ---
-
+lab1-star/2.png
+lab1-star/3.png
 ## 5. Итог
 
 Несанкционированный доступ к защищённым ресурсам не получен.  
