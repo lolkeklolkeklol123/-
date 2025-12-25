@@ -32,9 +32,8 @@
   - X-Content-Type-Options
   - Referrer-Policy
 - Обнаружены потенциально релевантные CVE для версии nginx
-
+<img width="1138" height="722" alt="4" src="https://github.com/user-attachments/assets/88e5a753-60c3-4e50-bf38-7c397f12e8d0" />
 ---
-lab1-star/4.png
 ## 4. Активное тестирование уязвимостей
 
 ### 4.1 Попытка Path Traversal 
@@ -46,7 +45,6 @@ curl -i "https://swrstats.ru/..%2f..%2fetc%2fpasswd"
 Результат: `HTTP/1.1 400 Bad Request`
 
 ---
-lab1-star/1.png
 ### 4.2 Попытка Path Traversal (URL-кодировка)
 
 ```bash
@@ -56,6 +54,7 @@ curl -i "https://swrstats.ru/%2e%2e%2f%2e%2e%2fetc%2fpasswd"
 Результат: `HTTP/1.1 400 Bad Request`
 
 ---
+<img width="487" height="227" alt="1" src="https://github.com/user-attachments/assets/1d427847-f348-4573-b491-a35040b90740" />
 
 ### 4.3 Проверка доступа к `.git`
 
@@ -94,10 +93,10 @@ curl -i -X OPTIONS https://swrstats.ru
 ```
 
 Результат: `HTTP/1.1 200 OK`
+<img width="1470" height="956" alt="2" src="https://github.com/user-attachments/assets/51577dc7-529e-48fc-900f-7f579a08c2fd" />
+<img width="801" height="424" alt="3" src="https://github.com/user-attachments/assets/6b0b753a-c319-4e47-abb5-350391ed2a3c" />
 
 ---
-lab1-star/2.png
-lab1-star/3.png
 ## 5. Итог
 
 Несанкционированный доступ к защищённым ресурсам не получен.  
